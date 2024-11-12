@@ -1,0 +1,21 @@
+<single-spa-router>
+  <main>
+    <route path="/recruitment/">
+      <nav>
+        <application name="@joyit/layout"></application>
+      </nav>
+    </route>
+    <route path="/landing/company" exact>
+      <application name="@joyit/landing"></application>
+    </route>
+    <route path="/landing/candidate" exact>
+      <application name="@joyit/landing"></application>
+    </route>
+    <route path="/login">
+      <application name="@joyit/user-management"></application>
+    </route>
+    <route default>
+      <h1>404 Not Found</h1>
+    </route>
+  </main>
+</single-spa-router>
